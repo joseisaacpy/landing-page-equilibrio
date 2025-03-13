@@ -71,7 +71,7 @@ body {
 }
 
 .hero::after {
-  animation: arrowMove 1.5s ease-in-out infinite alternate;
+  animation: arrowMove 1s ease-in-out infinite alternate;
   content: url(../img/arrow.svg);
   position: absolute;
   width: 30px;
@@ -124,16 +124,17 @@ body {
 }
 
 .item-img-left {
-  background: url(https://placehold.co/600x400/EEE/31343C) no-repeat center
+  background: url(https://placehold.co/300x400/EEE/31343C) no-repeat center
     center/cover;
 }
 .item-img-right {
-  background: url(https://placehold.co/600x400/EEE/31343C) no-repeat center
+  background: url(https://placehold.co/400x300/EEE/31343C) no-repeat center
     center/cover;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 600px) {
   .about {
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
   }
 }
