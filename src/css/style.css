@@ -1,6 +1,6 @@
 /* variáveis */
 :root {
-  --primary-color: #8c181c;
+  --primary-color: rgb(140, 24, 28);
   --secondary-color: #fdf813;
   --dark-color: #141414;
   --light-color: #f4f4f4;
@@ -19,10 +19,14 @@ body {
   font-family: "Roboto", sans-serif;
   /* define o grid css e estrutura */
   display: grid;
-  grid: "header header header header";
+  grid:
+    "header header header header"
+    "hero hero hero hero"
+    "about about about about"
+    "contact contact contact contact";
 }
 
-/* header */
+/* HEADER */
 .header {
   /* deixa o header fixo */
   position: sticky;
@@ -34,10 +38,43 @@ body {
   background-color: var(--primary-color);
 }
 
+/* container do header */
 .container-header {
   padding: 1.5rem 2rem;
   min-height: 75px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+/* HERO */
+.hero {
+  grid-area: hero;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+    url(../img/hero.png) no-repeat center center / cover fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  height: 90dvh;
+  position: relative;
+}
+
+/* título do hero */
+.hero h2 {
+  text-transform: uppercase;
+  color: var(--light-color);
+  font-size: clamp(2rem, 5vw, 3rem);
+  animation: fadeIn 3s ease-in-out;
+}
+
+.hero::after {
+  animation: arrowMove 1.5s ease-in-out infinite alternate;
+  content: url(../img/arrow.svg);
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  bottom: 10%;
 }

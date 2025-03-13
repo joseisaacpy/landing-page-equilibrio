@@ -1,9 +1,21 @@
 /* animações */
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
+  }
+}
+/* seta para baixo */
+@keyframes arrowMove {
+  0% {
+    opacity: 0.4;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translateY(30px);
   }
 }
