@@ -1,0 +1,43 @@
+/* variáveis */
+:root {
+  --primary-color: #8c181c;
+  --secondary-color: #fdf813;
+  --dark-color: #141414;
+  --light-color: #f4f4f4;
+}
+/* fonte Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* html */
+html {
+  font-size: 16px;
+}
+
+/* body */
+body {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  /* define o grid css e estrutura */
+  display: grid;
+  grid: "header header header header";
+}
+
+/* header */
+.header {
+  /* deixa o header fixo */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  grid-area: header;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.container-header {
+  padding: 1.5rem 2rem;
+  min-height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
