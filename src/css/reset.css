@@ -22,3 +22,12 @@ ul {
 img {
   max-width: 100%;
 }
+
+/* títulos h2 */
+h2 {
+  font-size: clamp(1.5rem, 3.5vw, 3.5rem);
+}
+/* títulos h3 */
+h3 {
+  font-size: clamp(1.4rem, 2.5vw, 3rem);
+}

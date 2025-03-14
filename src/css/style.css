@@ -23,7 +23,8 @@ body {
   grid:
     "header header header header"
     "hero hero hero hero"
-    "about about about about";
+    "about about about about"
+    "plans plans plans plans";
 }
 
 /* HEADER */
@@ -115,18 +116,19 @@ body {
   background-color: var(--primary-color);
   color: var(--light-color);
   transition: all 0.3s ease-in-out;
+  width: 50%;
 }
 
 .item-about a:hover {
-  border-radius: 18px;
+  border-radius: 40px;
   background-color: var(--primary-color-light);
-  /* color: var(--dark-color); */
 }
-
+/* imagem about da esquerda */
 .item-img-left {
   background: url(https://placehold.co/300x400/EEE/31343C) no-repeat center
     center/cover;
 }
+/* imagem about da direita */
 .item-img-right {
   background: url(https://placehold.co/400x300/EEE/31343C) no-repeat center
     center/cover;
@@ -137,4 +139,62 @@ body {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
+}
+
+/* PLANS */
+.plans {
+  grid-area: plans;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 1rem;
+  background-color: var(--dark-color);
+  color: #f4f4f4;
+}
+
+.container-plans {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+.plan {
+  text-align: center;
+}
+
+.plan a {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 600;
+  background-color: var(--light-color);
+  color: var(--primary-color);
+}
+
+
+@media (max-width: 768px) {
+  .container-plans {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 425px) {
+  .container-plans {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  padding: 1rem;
+  border: 3px solid var(--primary-color);
+  border-radius: 1rem;
+  animation: glow 2s ease-in-out infinite;
 }
