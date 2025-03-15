@@ -1,7 +1,3 @@
-/* .header img {
-  width: 60px;
-  border-radius: 50%;
-} */
 .header .logo {
   color: var(--light-color);
 }
@@ -14,6 +10,20 @@
   font-size: 1.2rem;
   font-weight: 500;
   color: #fff;
+}
+.header nav ul li a::after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+.header nav ul li a:hover {
+  text-decoration: none;
+}
+.header nav ul li a:hover::after {
+  width: 100%;
 }
 
 .header .menu {
