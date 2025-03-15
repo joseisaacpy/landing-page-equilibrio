@@ -160,8 +160,17 @@ body {
   padding: 1rem;
   grid-template-columns: repeat(4, 1fr);
 }
+
 .plan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
   text-align: center;
+  padding: 1rem;
+  border: 3px solid var(--primary-color);
+  border-radius: 1rem;
 }
 
 .plan a {
@@ -173,7 +182,6 @@ body {
   color: var(--primary-color);
 }
 
-
 @media (max-width: 768px) {
   .container-plans {
     grid-template-columns: repeat(2, 1fr);
@@ -184,17 +192,4 @@ body {
   .container-plans {
     grid-template-columns: repeat(1, 1fr);
   }
-}
-
-.plan {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 0.5rem;
-
-  padding: 1rem;
-  border: 3px solid var(--primary-color);
-  border-radius: 1rem;
-  animation: glow 2s ease-in-out infinite;
 }
