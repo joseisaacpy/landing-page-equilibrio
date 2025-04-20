@@ -38,18 +38,16 @@
 }
 
 .item-about a:hover {
-  border-radius: 40px;
+  transform: scale(0.9);
   background-color: var(--primary-color-light);
 }
 /* imagem about da esquerda */
 .item-img-left {
-  background: url(https://placehold.co/300x400/EEE/31343C) no-repeat center
-    center/cover;
+  background: url(../img/about/about-1.webp) no-repeat center center/cover;
 }
 /* imagem about da direita */
 .item-img-right {
-  background: url(https://placehold.co/400x300/EEE/31343C) no-repeat center
-    center/cover;
+  background: url(../img/about/about-2.webp) no-repeat center center/cover;
 }
 
 @media (max-width: 600px) {
