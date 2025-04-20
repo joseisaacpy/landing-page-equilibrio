@@ -1,0 +1,52 @@
+/* PLANS */
+.plans {
+  grid-area: plans;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 1rem;
+  background-color: var(--dark-color);
+  color: #f4f4f4;
+}
+
+.container-plans {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+  padding: 1rem;
+  border: 3px solid var(--primary-color);
+  border-radius: 1rem;
+}
+
+.plan a {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 600;
+  background-color: var(--light-color);
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .container-plans {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 425px) {
+  .container-plans {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

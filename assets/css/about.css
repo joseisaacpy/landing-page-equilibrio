@@ -1,0 +1,60 @@
+/* SOBRE */
+.about {
+  background: var(--dark-color);
+  color: var(--light-color);
+  grid-area: about;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.item-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 15%;
+  text-align: center;
+}
+
+.item-about h3 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+.item-about p {
+  font-size: clamp(1rem, 5vw, 1.5rem);
+}
+
+.item-about a {
+  font-size: clamp(1rem, 5vw, 1.5rem);
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  transition: all 0.3s ease-in-out;
+  width: 50%;
+}
+
+.item-about a:hover {
+  border-radius: 40px;
+  background-color: var(--primary-color-light);
+}
+/* imagem about da esquerda */
+.item-img-left {
+  background: url(https://placehold.co/300x400/EEE/31343C) no-repeat center
+    center/cover;
+}
+/* imagem about da direita */
+.item-img-right {
+  background: url(https://placehold.co/400x300/EEE/31343C) no-repeat center
+    center/cover;
+}
+
+@media (max-width: 600px) {
+  .about {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+}

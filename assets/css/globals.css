@@ -1,0 +1,64 @@
+/* reset padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* fonte Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* variáveis */
+:root {
+  --primary-color: rgb(140, 24, 28);
+  --primary-color-light: rgb(223, 0, 7);
+  --secondary-color: #fdf813;
+  --dark-color: #141414;
+  --light-color: #f4f4f4;
+  --fontDefault: "Roboto", sans-serif;
+}
+
+/* html */
+html {
+  font-size: 16px;
+}
+
+/* body */
+body {
+  font-size: 1rem;
+  font-family: var(--fontDefault);
+  /* define o grid css e estrutura */
+  display: grid;
+  grid:
+    "header header header header"
+    "hero hero hero hero"
+    "about about about about"
+    "plans plans plans plans";
+}
+
+/* ancoras / a */
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* listas / ul */
+ul {
+  list-style: none;
+}
+
+/* imagens / img */
+img {
+  max-width: 100%;
+}
+
+/* títulos h2 */
+h2 {
+  font-size: clamp(1.5rem, 3.5vw, 3.5rem);
+}
+/* títulos h3 */
+h3 {
+  font-size: clamp(1.4rem, 2.5vw, 3rem);
+}
