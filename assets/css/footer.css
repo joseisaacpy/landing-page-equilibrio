@@ -20,6 +20,7 @@
   width: 150px;
   height: auto;
   border-radius: 50%;
+  animation: float 3s ease-in-out infinite;
 }
 
 /* paragrafos de informações do footer */
@@ -44,7 +45,7 @@
 /* paragrafos da parte final do footer */
 .footer-bottom p {
   font-size: 14px;
-  color: #777;
+  color: var(--light-color);
   margin: 5px 0;
 }
 
@@ -52,6 +53,7 @@
 .footer-bottom a {
   color: #aaa;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .footer-bottom a:hover {
