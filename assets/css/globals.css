@@ -25,15 +25,16 @@ html {
 
 /* body */
 body {
-  font-size: 1rem;
   font-family: var(--fontDefault);
+  font-size: 1rem;
   /* define o grid css e estrutura */
   display: grid;
   grid:
     "header header header header"
     "hero hero hero hero"
     "about about about about"
-    "plans plans plans plans";
+    "plans plans plans plans"
+    "footer footer footer footer";
 }
 
 /* ancoras / a */
@@ -62,3 +63,5 @@ h2 {
 h3 {
   font-size: clamp(1.4rem, 2.5vw, 3rem);
 }
+
+/* paragrafos */

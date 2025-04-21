@@ -1,0 +1,59 @@
+/* footer */
+.footer {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  grid-area: footer;
+  padding: 1rem;
+}
+
+/* container do footer */
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+/* img/logo do footer */
+.footer-logo img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* paragrafos de informações do footer */
+.footer-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* ancoras do footer */
+.footer-social a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #f44336; /* vermelho fitness, estilo academia */
+}
+
+/* paragrafos da parte final do footer */
+.footer-bottom p {
+  font-size: 14px;
+  color: #777;
+  margin: 5px 0;
+}
+
+/* ancoras da parte final do footer */
+.footer-bottom a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #fff;
+}
