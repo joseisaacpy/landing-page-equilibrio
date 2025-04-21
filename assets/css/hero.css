@@ -19,6 +19,7 @@
   color: var(--light-color);
   font-size: clamp(2rem, 5vw, 3rem);
   animation: fadeIn 3s ease-in-out;
+  /* adicionar uma fonte para destacar */
 }
 
 .hero::after {
