@@ -30,7 +30,7 @@
   border-radius: 1rem;
 }
 
-.plan a {
+/* .plan a {
   width: 100%;
   border-radius: 10px;
   padding: 10px;
@@ -42,7 +42,38 @@
 
 .plan a:hover {
   background-color: var(--primary-color);
+  color: var(--light-color-color);
+} */
+
+.plan a {
+  width: 100%;
+  padding: 10px;
+
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  font-weight: 600;
+  background-color: transparent;
+  color: var(--primary-color);
+  text-decoration: none;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.plan a:hover {
+  background-color: var(--primary-color);
   color: var(--light-color);
+}
+
+.plan a:active,
+.plan a:focus {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  transform: scale(0.9);
 }
 
 @media (max-width: 768px) {
