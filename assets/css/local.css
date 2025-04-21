@@ -1,0 +1,29 @@
+.local {
+  grid-area: local;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 2rem 1rem;
+  gap: 1rem;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+    url(../img/about/about-1.webp) no-repeat center center / cover;
+}
+
+.local h2 {
+  font-size: clamp(1rem, 3rem, 2rem);
+  color: var(--light-color);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.local iframe {
+  width: 100%;
+  /* max-width: 800px; */
+  height: clamp(300px, 30vw, 500px);
+  border-radius: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+}
